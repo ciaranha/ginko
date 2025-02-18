@@ -11,6 +11,7 @@ export default defineConfig(() => {
       rollupOptions: {
         input: ["src/entry.ssr.tsx", "@qwik-city-plan"],
       },
+      outDir: ".vercel/output/functions/_qwik-city.func",
     },
   };
 });
