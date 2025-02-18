@@ -9,15 +9,6 @@ import Process from "~/components/widgets/Process";
 import CTA from '~/components/widgets/CTA';
 import FAQ from '~/components/widgets/FAQ';
 import FooterCTA from "~/components/widgets/FooterCTA";
-
-import { qwikSerialized } from "~/utils/qwikSerialized";
-
-const IconBrandTailwind = qwikSerialized(() => import("../components/icons/IconBrandTailwind"));
-const IconApps = qwikSerialized(() => import("../components/icons/IconApps"));
-const IconRocket = qwikSerialized(() => import("../components/icons/IconRocket"));
-const IconBrandGoogle = qwikSerialized(() => import("../components/icons/IconBrandGoogle"));
-const IconBulb = qwikSerialized(() => import("../components/icons/IconBulb"));
-
 import { SITE } from "~/config.mjs";
 
 

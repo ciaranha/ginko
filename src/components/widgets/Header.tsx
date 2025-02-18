@@ -1,24 +1,15 @@
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
-import { useContent } from "@builder.io/qwik-city";
-
-import Logo from "~/components/common/Logo";
-import ToggleTheme from "~/components/common/ToggleTheme";
-import ToggleMenu from "~/components/common/ToggleMenu";
-import IconChevronDown from "../icons/IconChevronDown";
+import { component$, useSignal, useOnWindow, $ } from "@builder.io/qwik";
 
 export default component$(() => {
   const isScrolled = useSignal(false);
 
-  // Add scroll listener
-  useVisibleTask$(() => {
-    const handleScroll = () => {
+  // Replace useVisibleTask$ with useOnWindow
+  useOnWindow(
+    'scroll',
+    $(() => {
       isScrolled.value = window.scrollY > 10;
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-
-  const { menu } = useContent();
+    })
+  );
 
   return (
     <>

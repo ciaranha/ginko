@@ -9,8 +9,8 @@ export default defineConfig(() => {
     build: {
       ssr: true,
       rollupOptions: {
-        input: ["src/entry.vercel.tsx", "@qwik-city-plan"],
+        input: ["src/entry.ssr.tsx", "@qwik-city-plan"],
       },
     },
   };
-}); 
+});

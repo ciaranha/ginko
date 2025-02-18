@@ -1,9 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
 import Button from "../common/Button";
-
-const coverImage =
-  "https://images.unsplash.com/photo-1590767950092-42b8362368da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80";
 
 export default component$(() => {
   return (
@@ -24,7 +20,7 @@ export default component$(() => {
               <div class="flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
                 
                 <div class="flex gap-3">
-                    <Button variant="primary" href="/contact">
+                    <Button variant="primary" >
                       Book a call
                     </Button>
                 </div>  

@@ -55,7 +55,9 @@ export default component$(() => {
                             <img
                                 src={member.image}
                                 alt={member.name}
-                                class="w-14 h-14 rounded-full object-cover"
+                                width={64}
+                                height={64}
+                                class="rounded-full"
                             />
                             <div class="flex-1 space-y-1">
                                 <h3 class="text-xl text-gray-900 font-medium">{member.name}</h3>
