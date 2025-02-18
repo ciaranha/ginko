@@ -37,7 +37,7 @@ export default component$(() => {
             <div class="max-w-[856px] mx-auto">
                 <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
                     <div>
-                        <h2 class="text-5xl font-bold text-gray-900 mb-6">
+                        <h2 class="text-5xl font-medium text-gray-900 mb-6">
                         Meet your<br />
                         cloud<br />
                         optimization<br />

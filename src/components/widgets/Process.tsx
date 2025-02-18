@@ -33,7 +33,7 @@ export default component$(() => {
             <div class="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm mb-4">
               HOW IT WORKS
             </div>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 class="text-4xl md:text-5xl font-medium text-gray-900 mb-4">
               Our process
             </h2>
             <p class="text-gray-600 text-xl">
