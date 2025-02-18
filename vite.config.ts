@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import { qwikVite } from '@builder.io/qwik/optimizer';
 import { qwikCity } from '@builder.io/qwik-city/vite';
-import { vercelEdgeAdapter } from '@builder.io/qwik-city-vercel-edge';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 import { SITE } from './src/config.mjs';
@@ -12,7 +11,6 @@ export default defineConfig(() => {
         plugins: [
             qwikCity(),
             qwikVite(),
-            vercelEdgeAdapter(),
             tsconfigPaths(),
         ],
         preview: {
