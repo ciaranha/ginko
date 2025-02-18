@@ -22,34 +22,74 @@ interface Props {
   classes?: any;
 }
 
-export default component$((props: Props) => {
-  const { id, title = "", subtitle = "", highlight = "", items = [], classes = {}, isDark = false } = props;
+export default component$(() => {
+  const features = [
+    {
+      title: 'Compute flexibility',
+      description: 'Keep your cloud agile with Spot Instances and Graviton. Get the power you need without the premium, adapting in real-time.',
+      icon: '⚡' // We can replace these with proper SVG icons
+    },
+    {
+      title: 'Custom software',
+      description: 'Our automation tools eliminate manual work and increase reliability—like AutoSpotting and EBS Optimizer, continuously improved over time.',
+      icon: '🔧'
+    },
+    {
+      title: 'Discount management',
+      description: 'Achieve up to 55% more savings with Reserved Instances and Savings Plans while mitigating long-term commitment risk.',
+      icon: '🏷️'
+    },
+    {
+      title: 'EBS storage optimisation',
+      description: 'Rightsizing, autoscaling, and scheduling ensure you use exactly what you need, when you need it, optimizing dynamically.',
+      icon: '💾'
+    },
+    {
+      title: 'Network latency optimisation',
+      description: 'Use advanced routing and to reduce latency and enhance data transfer speeds across regions, improving performance in real-time.',
+      icon: '🌐'
+    },
+    {
+      title: 'Capacity optimisation',
+      description: 'Choose the right storage every time. With GP2, GP3, IO1, and IO2 options, you are storing data while optimizing performance and cost.',
+      icon: '📊'
+    }
+  ];
 
   return (
-    <section class="relative scroll-mt-16" {...(id ? { id } : {})}>
-      <div class="absolute inset-0 pointer-events-none -z-[1]" aria-hidden="true">
-        <slot name="bg">
-          <div class={twMerge("absolute inset-0", isDark ? "bg-dark dark:bg-transparent" : "")}></div>
-        </slot>
-      </div>
-      <div
-        class={twMerge(
-          "relative mx-auto max-w-5xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default",
-          classes?.container,
-          isDark ? "dark" : ""
-        )}
-      >
-        <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
-        <ItemGrid
-          items={items}
-          defaultIcon={IconStar}
-          classes={{
-            container: "md:grid-cols-2",
-            title: "md:text-[1.3rem]",
-            icon: "text-white bg-secondary-500 dark:bg-secondary-700 rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4",
-            ...(classes?.items ?? {}),
-          }}
-        />
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="max-w-[856px] mx-auto">
+          {/* Header */}
+          <div class="text-center mb-16">
+            <div class="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm mb-4">
+              WHAT WE DO
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Helping you scale and<br />innovate faster
+            </h2>
+            <p class="text-gray-600 text-xl">
+              We build custom software that goes beyond savings to help you scale and innovate faster.
+            </p>
+          </div>
+
+          {/* Features Grid */}
+          <div class="grid md:grid-cols-3 gap-x-8 gap-y-12">
+            {features.map((feature) => (
+              <div key={feature.title} class="flex flex-col items-center text-center">
+                <div class="text-3xl mb-4">
+                  {feature.icon}
+                </div>
+                <h3 class="text-gray-900 font-medium text-lg mb-2">
+                  {feature.title}
+                </h3>
+                <p class="text-gray-600">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
