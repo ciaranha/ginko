@@ -62,7 +62,7 @@ export default component$(() => {
         <div class="max-w-[856px] mx-auto">
           {/* Header */}
           <div class="text-center mb-16">
-            <div class="inline-block px-3 py-1 bg-gray-200 uppercase rounded-full text-sm mb-4">
+            <div class="inline-block px-3 py-1 bg-gray-200 uppercase font-mono font-medium rounded-full text-sm mb-4">
               <span>What we do</span>
             </div>
             <h2 class="text-4xl md:text-5xl font-medium text-gray-900 mb-4">

@@ -32,6 +32,7 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.0.20",
     "@unpic/qwik": "^0.0.46",
+    "@vercel/node": "^5.1.7",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "node-fetch": "3.3.2",
@@ -39,7 +40,7 @@
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.8.0",
-    "@builder.io/qwik-city": "^1.8.0",
+    "@builder.io/qwik-city": "^1.12.0",
     "@divriots/jampack": "^0.25.0",
     "@tailwindcss/typography": "^0.5.14",
     "@types/eslint": "^8.56.10",

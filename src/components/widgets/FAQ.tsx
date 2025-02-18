@@ -46,7 +46,7 @@ export default component$(() => {
       <div class="max-w-[1200px] mx-auto px-4">
         <div class="max-w-[856px] mx-auto">
           <div class="grid grid-cols-[300px_1fr] gap-8">
-            <h2 class="text-4xl font-bold text-gray-900 sticky top-8">
+            <h2 class="text-4xl font-medium text-gray-900 sticky top-8">
               FAQs
             </h2>
 

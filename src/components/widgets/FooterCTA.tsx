@@ -6,13 +6,13 @@ export default component$(() => {
       <div class="max-w-[1200px] mx-auto px-4">
         <div class="max-w-[856px] mx-auto text-center">
           {/* Header */}
-          <div class="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm mb-8">
+          <div class="inline-block px-3 py-1 bg-gray-200 font-mono font-medium rounded-full text-sm mb-8">
             GET STARTED
           </div>
 
-          <h2 class="text-4xl md:text-5xl font-bold mb-4">
-            <span class="text-gray-500">Book a 30-minute</span><br />
-            <span class="text-gray-500">introduction call</span>
+          <h2 class="text-4xl md:text-5xl font-medium mb-4">
+            <span class="text-gray-900">Book a 30-minute</span><br />
+            <span class="text-gray-600">introduction call</span>
           </h2>
 
           <p class="text-gray-600 text-xl mb-12">
