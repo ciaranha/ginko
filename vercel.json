@@ -21,9 +21,5 @@
   ],
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/api" }
-  ]
+  "installCommand": "npm install"
 }
